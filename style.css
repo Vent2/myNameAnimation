@@ -15,6 +15,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /*  Trying to added fill in animation */
+    /* animation: fill 1.5s ease forwards 3s;*/
 }
 
 
@@ -23,31 +25,37 @@ body {
 #logo path:nth-child(2) {
     stroke-dasharray: 1320px;
     stroke-dashoffset: 1320px;
+    animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(3) {
     stroke-dasharray: 850px;
     stroke-dashoffset: 850px;
+    animation: line-anim 2s ease forwards 0.3s;
 }
 
 #logo path:nth-child(4) {
     stroke-dasharray: 510px;
     stroke-dashoffset: 510px;
+    animation: line-anim 2s ease forwards 0.6s;
 }
 
 #logo path:nth-child(5) {
     stroke-dasharray: 860px;
     stroke-dashoffset: 860px;
+    animation: line-anim 2s ease forwards 0.9s;
 }
 
 #logo path:nth-child(6) {
     stroke-dasharray: 570px;
     stroke-dashoffset: 570px;
+    animation: line-anim 2s ease forwards 1.2s;
 }
 
 #logo path:nth-child(7) {
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
+    animation: line-anim 2s ease forwards 1.5s;
 }
 
 
@@ -56,34 +64,60 @@ body {
 #logo path:nth-child(8) {
     stroke-dasharray: 900px;
     stroke-dashoffset: 900px;
+    animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(9) {
     stroke-dasharray: 815px;
     stroke-dashoffset: 815px;
+    animation: line-anim 2s ease forwards 0.3s;
 }
 
 #logo path:nth-child(10) {
     stroke-dasharray: 890px;
     stroke-dashoffset: 890px;
+    animation: line-anim 2s ease forwards 0.6s;
 }
 
 #logo path:nth-child(11) {
     stroke-dasharray: 640px;
     stroke-dashoffset: 640px;
+    animation: line-anim 2s ease forwards 0.9s;
 }
 
 #logo path:nth-child(12) {
     stroke-dasharray: 880px;
     stroke-dashoffset: 880px;
+    animation: line-anim 2s ease forwards 1.2s;
 }
 
 #logo path:nth-child(13) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
+    animation: line-anim 2s ease forwards 1.5s;
 }
 
 #logo path:nth-child(14) {
     stroke-dasharray: 680px;
     stroke-dashoffset: 680px;
+    animation: line-anim 2s ease forwards 1.8s;
 }
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Figure out why it doesn't fill in letters */
+
+
+/* @keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+} */
